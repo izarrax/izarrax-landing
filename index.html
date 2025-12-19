@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IzarraX — Premium Android Solutions</title>
+  <meta name="description" content="IzarraX — Performance, Sécurité et Design Premium." />
+  <style>
+    :root{
+      --bg1:#0b1638; --bg2:#1b2a6a; --bg3:#3a1e6a;
+      --p1:#4f8cff; --p2:#8b4bff; --text:#ffffff;
+    }
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 25% 30%, rgba(79,140,255,.35) 0%, transparent 55%),
+        radial-gradient(900px 600px at 75% 70%, rgba(139,75,255,.35) 0%, transparent 55%),
+        linear-gradient(135deg,var(--bg1),var(--bg2) 45%,var(--bg3));
+    }
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:48px 20px}
+    .card{max-width:980px;width:100%;text-align:center}
+    .brand{display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:18px}
+    .logo{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--p1),var(--p2));
+      display:grid;place-items:center;font-weight:800}
+    .logo span{filter:drop-shadow(0 6px 18px rgba(0,0,0,.35))}
+    h1{font-size:76px;line-height:1.02;margin:0 0 12px;letter-spacing:-1px}
+    .tag{display:inline-block;padding:10px 14px;border:1px solid rgba(255,255,255,.18);
+      border-radius:999px;backdrop-filter:blur(10px);opacity:.95;margin:10px 0 22px}
+    .sub{font-size:22px;opacity:.92;margin:0 0 26px}
+    .sub b{color:#ffd1ff}
+    .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+    a.btn{display:inline-block;padding:14px 18px;border-radius:14px;text-decoration:none;font-weight:650}
+    .primary{background:linear-gradient(90deg,var(--p1),var(--p2));color:#fff}
+    .ghost{border:1px solid rgba(255,255,255,.26);color:#fff;background:rgba(0,0,0,.12)}
+    .grid{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+    .kpi{min-width:170px;padding:14px 16px;border:1px solid rgba(255,255,255,.14);
+      border-radius:18px;background:rgba(0,0,0,.12)}
+    .kpi b{display:block;font-size:36px;margin-bottom:4px}
+    .foot{opacity:.72;margin-top:30px;font-size:13px}
+    .nav{position:fixed;top:18px;left:0;right:0;display:flex;justify-content:center;pointer-events:none}
+    .navbar{pointer-events:auto;max-width:980px;width:calc(100% - 40px);display:flex;align-items:center;
+      justify-content:space-between;padding:12px 14px;border-radius:16px;border:1px solid rgba(255,255,255,.12);
+      background:rgba(0,0,0,.18);backdrop-filter:blur(10px)}
+    .navlinks{display:flex;gap:16px;align-items:center;opacity:.9}
+    .navlinks a{color:#fff;text-decoration:none;font-size:14px;opacity:.9}
+    .navbtn{padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--p1),var(--p2));
+      color:#fff;text-decoration:none;font-weight:700;font-size:14px}
+    @media (max-width:640px){h1{font-size:54px}.sub{font-size:18px}}
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="navbar">
+      <div class="brand" style="margin:0">
+        <div class="logo"><span>X</span></div>
+        <div style="font-weight:800;letter-spacing:.2px">IzarraX</div>
+      </div>
+      <div class="navlinks">
+        <a href="#apps">Applications</a>
+        <a href="#features">Fonctionnalités</a>
+        <a class="navbtn" href="#" onclick="alert('Portail en préparation 🙂');return false;">Client Portal</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="card">
+      <h1>IzarraX</h1>
+      <div class="tag">Premium • Android • Solutions</div>
+      <p class="sub">
+        Transformez votre expérience Android avec nos applications innovantes.<br>
+        <b>Performance</b>, <b>Sécurité</b> et <b>Design Premium</b>.
+      </p>
+
+      <div class="cta" id="apps">
+        <a class="btn primary" href="#" onclick="alert('Bientôt disponible 🙂');return false;">Découvrir nos Apps →</a>
+        <a class="btn ghost" href="mailto:contact@izarrax.fr">Nous contacter</a>
+      </div>
+
+      <div class="grid" id="features">
+        <div class="kpi"><b>100%</b>Sécurisé</div>
+        <div class="kpi"><b>∞</b>Personnalisation</div>
+        <div class="kpi"><b>24/7</b>Support</div>
+        <div class="kpi"><b>⚡</b>Ultra rapide</div>
+      </div>
+
+      <div class="foot">© IzarraX — Coming soon</div>
+    </div>
+  </div>
+</body>
+</html>
